@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from web import views
+from web.views import OnePageView
 
 urlpatterns = [
-    url(r'^$', views.landing_single_view, name='landing_single_view'),
+    url(r'^$', OnePageView.as_view(), name='landing_single_view'),
 ]
