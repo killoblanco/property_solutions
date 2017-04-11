@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Third Party Apps
+    'crispy_forms',
+    # Project Apps
+    'mailg',
     'web',
 ]
 
@@ -119,3 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CRISPY_TEMPLATE_PACK = "bootstrap3"
+
+MAILG_DOMAIN_NAME = "killoblan.co"
+MAILG_API_KEY = "key-332fbbcf02e6f2c71f848aa74c564503"
+MAILG_DEFAULT_SENDER = "no-reply@propertysolutions.com"
