@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6.1 (C:\Users\Kamilo\Anaconda3\envs\ps\python.exe)" project-jdk-type="Python SDK" />
-  <component name="PyConsoleOptionsProvider">
-    <option name="myPythonConsoleState">
-      <console-settings sdk-home="C:\Users\Kamilo\Anaconda3\python.exe">
-        <envs>
-          <env key="ENV" value="dev" />
-        </envs>
-        <option name="mySdkHome" value="C:\Users\Kamilo\Anaconda3\python.exe" />
-        <option name="myEnvs">
-          <map>
-            <entry key="ENV" value="dev" />
-          </map>
-        </option>
-      </console-settings>
-    </option>
-  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6.1 (/anaconda/envs/ps/bin/python3.6)" project-jdk-type="Python SDK" />
   <component name="PyVirtualEnvTerminalCustomizer">
     <option name="virtualEnvActivate" value="false" />
   </component>
