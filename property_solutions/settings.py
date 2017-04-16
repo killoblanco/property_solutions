@@ -25,7 +25,7 @@ SECRET_KEY = 'frvdlz!@s+1eze7x3l&2y36h9pj&6y+&*+a(re5zk#&-91q858'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     # Third Party Apps
     'crispy_forms',
     # Project Apps
+    'core',
+    'core.scrumboard',
     'mailg',
     'web',
 ]

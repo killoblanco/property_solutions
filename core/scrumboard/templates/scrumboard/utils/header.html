@@ -1,0 +1,17 @@
+<header class="mdl-layout__header mdl-layout__header--waterfall">
+    <!-- Top row, always visible -->
+    <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Scrum Board</span>
+    </div>
+    <!-- Bottom row, not visible on scroll -->
+    <div class="mdl-layout__header-row">
+        <!-- Navigation -->
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link mdl-js-ripple-effect" href="{% url "core:scrumboard:index" %}">Home</a>
+            <a class="mdl-navigation__link mdl-js-ripple-effect" href="{% url "core:scrumboard:list" %}">List</a>
+            <a class="mdl-navigation__link mdl-js-ripple-effect" href="{% url "core:scrumboard:create" %}">New</a>
+        </nav>
+        <div class="mdl-layout-spacer"></div>
+    </div>
+</header>

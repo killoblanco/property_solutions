@@ -12,7 +12,7 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.6.1 (/anaconda/envs/ps/bin/python3.6)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
@@ -20,6 +20,8 @@
     <option name="TEMPLATE_FOLDERS">
       <list>
         <option value="$MODULE_DIR$/web/templates" />
+        <option value="$MODULE_DIR$/core/templates" />
+        <option value="$MODULE_DIR$/core/scrumboard/templates" />
       </list>
     </option>
   </component>

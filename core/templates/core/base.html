@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "core/common/meta.html" %}
+    {# {% include "core/common/ga.html" %} #}
+    {% include "core/common/css.html" %}
+    {% block css %}{% endblock %}
+</head>
+<body>
+{# {% include "core/common/gtm.html" %} #}
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    {#% include "core/sections/header.html" %#}
+    {% include "core/sections/sidebar.html" %}
+    <main class="mdl-layout__content">
+        <div class="page-content">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+</div>
+{% include "core/common/js.html" %}
+{% block js %}{% endblock %}
+</body>
+</html>
