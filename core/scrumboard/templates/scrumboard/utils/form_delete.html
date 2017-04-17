@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <h4>Are you sure you want to delete "{{ object }}"?</h4>
+            <div class="text-right">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="{% url "core:scrumboard:read" %}">
+                        Cancel
+                    </a>
+                    <input type="submit" value="Confirm"
+                           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

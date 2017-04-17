@@ -12,6 +12,7 @@
                 <th class="mdl-data-table__cell--non-numeric">Type</th>
                 <th class="mdl-data-table__cell--non-numeric">Priority</th>
                 <th class="mdl-data-table__cell--non-numeric">Deadline</th>
+                <th class="mdl-data-table__cell--non-numeric" width="12%">&nbsp;</th>
             </tr>
             </thead>
             <tbody>
@@ -21,6 +22,16 @@
                     <td class="mdl-data-table__cell--non-numeric">{{ requirement.type }}</td>
                     <td class="mdl-data-table__cell--non-numeric">{{ requirement.priority }}</td>
                     <td class="mdl-data-table__cell--non-numeric">{{ requirement.deadline }}</td>
+                    <td class="mdl-data-table__cell--non-numeric">
+                        <a class="mdl-button mdl-js-button mdl-button--icon"
+                           href="{% url "core:scrumboard:update" requirement.id %}">
+                            <i class="material-icons">mode_edit</i>
+                        </a>
+                        <a class="mdl-button mdl-js-button mdl-button--icon mdl-button--accent"
+                           href="{% url "core:scrumboard:delete" requirement.id %}">
+                            <i class="material-icons">delete</i>
+                        </a>
+                    </td>
                 </tr>
             {% empty %}
                 <tr>
