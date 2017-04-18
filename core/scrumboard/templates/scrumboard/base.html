@@ -4,8 +4,9 @@
     <div class="demo-layout-waterfall page-content mdl-layout mdl-js-layout mdl-layout--fixed-header">
         {% include "scrumboard/utils/header.html" %}
         <main class="mdl-layout__content">
-            <div class="page-content">
+            <div class="page-content" style="margin-top: 1rem;">
                 {% block page %}{% endblock %}
+                {% include "core/common/footer.html" %}
             </div>
         </main>
     </div>
