@@ -55,6 +55,10 @@ class RequestDeadlineChartData(APIView):
     permission_classes = []
 
     def get(self, request, format=None):
+        df = self.getDataInfo()
+        return Response(df)
+
+    def getDataInfo(self):
         data = Requirements.objects.values_list('deadline', flat=True)
 
         df = {}
@@ -67,5 +71,4 @@ class RequestDeadlineChartData(APIView):
                 df[date.year][date.month][date.day] = 1
             else:
                 df[date.year][date.month][date.day] += 1
-
-        return Response(df)
+        return df
