@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -47,3 +48,24 @@ class RequestPriorityChartData(APIView):
                 data['data'].append(0)
 
         return Response(data)
+
+
+class RequestDeadlineChartData(APIView):
+    authentication_classes = []
+    permission_classes = []
+
+    def get(self, request, format=None):
+        data = Requirements.objects.values_list('deadline', flat=True)
+
+        df = {}
+        for date in data:
+            if date.year not in df.keys():
+                df[date.year] = {}
+            if date.month not in df[date.year].keys():
+                df[date.year][date.month] = {}
+            if date.day not in df[date.year][date.month].keys():
+                df[date.year][date.month][date.day] = 1
+            else:
+                df[date.year][date.month][date.day] += 1
+
+        return Response(df)
