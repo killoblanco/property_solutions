@@ -1,3 +1,4 @@
+{% load crispy_forms_tags %}
 <section id="contact-content">
     <div class="container">
         <div class="row">
@@ -7,13 +8,7 @@
                 </div>
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
-                <form action="#" class="contact-form" method="post">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <p>
-                        <button type="submit">Submit Now</button>
-                    </p>
-                </form>
+                {% form %}
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contact-info">
                 <ul>
