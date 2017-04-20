@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'frvdlz!@s+1eze7x3l&2y36h9pj&6y+&*+a(re5zk#&-91q858'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if 'ENV' not in os.environ.keys() or os.environ['ENV'] == 'PBE' else False
 
 ALLOWED_HOSTS = ['*']
 
@@ -129,6 +129,8 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static_files")
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 CRISPY_TEMPLATE_PACK = "bootstrap3"
 
