@@ -1,0 +1,1 @@
+web: gunicorn property_solutions.wsgi --log-file -
