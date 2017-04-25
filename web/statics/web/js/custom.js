@@ -274,7 +274,7 @@ function videoFancyBox () {
 	};
 }
 //Contact Form Validation
-function contactFormValidation () {
+/*function contactFormValidation () {
 	if($('.contact-form').length){
 		$('.contact-form').validate({ // initialize the plugin
 			rules: {
@@ -344,6 +344,7 @@ function rqaFormValidation () {
 		});
 	}
 }
+*/
 //Hide Loading Box (Preloader)
 function handlePreloader() {
 	if($('.preloader').length){
@@ -586,8 +587,8 @@ function expertizeRoundCircle () {
 			mobileNavToggler();
 			customTabServiceTab();
 			wowActivator();
-			contactFormValidation();
-			rqaFormValidation();
+			//contactFormValidation();
+			//rqaFormValidation();
 			headerTopSearch();
 			headerTopCart();
 			BannerTabActivation();

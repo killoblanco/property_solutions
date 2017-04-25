@@ -10,9 +10,16 @@
                 <form action="#" class="contact-form" method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <p>
-                        <button type="submit">Submit Now</button>
-                    </p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p>
+                                <button type="submit">Submit Now</button>
+                            </p>
+                        </div>
+                        <div class="col-sm-9">
+                            {% include "web/utils/common/messages.html" %}
+                        </div>
+                    </div>
                 </form>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 contact-info">
