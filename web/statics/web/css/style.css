@@ -2551,7 +2551,7 @@ footer .footer-menu .footer-nav-toggler {
     border-bottom: 1px solid #E2E2E2;
 }
 #project-version-one .gallery-filter li {
-    display: inline;
+    display: inline-block;
 }
 #project-version-one .gallery-filter li span {
     display: inline-block;
@@ -5391,6 +5391,7 @@ header.construct .cart-box {
 }
 #project-version-one.construct.home .gallery-filter li {
     margin-right: 16px;
+    margin-top: 16px;
 }
 #project-version-one.construct.home .gallery-filter li span {
     line-height: 33px;
