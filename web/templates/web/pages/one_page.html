@@ -2,12 +2,11 @@
 {% load static %}
 
 {% block content %}
-    {% include 'web/utils/common/topbar.html' %}
-    {% include 'web/utils/common/menu.html' %}
-    {% include 'web/utils/sections/banner.html' %}
-    {% include 'web/utils/sections/welcome.html' %}
-    {% include 'web/utils/sections/services.html' %}
-
+    {% include "web/sections/topbar.html" %}
+    {% include "web/sections/header-curvy.html" %}
+    {% include "web/sections/rev_slider_wrapper.html" %}
+    {% include "web/sections/construction-welcome.html" %}
+    {% include "web/sections/service-we-provide.html" %}
     {% include "web/sections/project-version-one.html" %}
 {#    {% include "web/sections/video-section-construction.html" %}#}
 {#    {% include "web/sections/our-team-construct.html" %}#}
