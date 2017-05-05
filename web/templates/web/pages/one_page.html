@@ -1,21 +1,23 @@
 {% extends "web/utils/base.html" %}
+{% load static %}
 
 {% block content %}
-    {% include 'web/utils/common/topbar.html' %}
-    {% include 'web/utils/common/menu.html' %}
-    {% include 'web/utils/sections/banner.html' %}
-    {% include 'web/utils/sections/welcome.html' %}
-    {% include 'web/utils/sections/services.html' %}
-{#    {% include 'web/utils/sections/projects.html' %}#}
-{#    {% include 'web/utils/sections/video.html' %}#}
-{#    {% include 'web/utils/sections/team.html' %}#}
-{#    {% include 'web/utils/sections/testimonials.html' %}#}
-{#    {% include 'web/utils/sections/pricing.html' %}#}
-    {% include 'web/utils/sections/welcome2.html' %}
-{#    {% include 'web/utils/sections/blog.html' %}#}
-    {% include 'web/utils/sections/contact_form.html' %}
-    {% include 'web/utils/sections/map.html' %}
-{#    {% include 'web/utils/sections/clients.html' %}#}
-    {% include 'web/utils/sections/contact.html' %}
-    {% include 'web/utils/common/footer.html' %}
+    {% include "web/sections/topbar.html" %}
+    {% include "web/sections/header-curvy.html" %}
+    {% include "web/sections/rev_slider_wrapper.html" %}
+    {% include "web/sections/construction-welcome.html" %}
+    {% include "web/sections/service-we-provide.html" %}
+    {% include "web/sections/project-version-one.html" %}
+{#    {% include "web/sections/video-section-construction.html" %}#}
+{#    {% include "web/sections/our-team-construct.html" %}#}
+{#    {% include "web/sections/testimonials-construct-home.html" %}#}
+{#    {% include "web/sections/pricing-content.html" %}#}
+    {% include "web/sections/welcome-to-construct.html" %}
+{#    {% include "web/sections/blog-construct.html" %}#}
+    {% include "web/sections/contact-content.html" %}
+    {% include "web/sections/contact-google-map.html" %}
+{#    {% include "web/sections/clients.html" %}#}
+    {% include "web/sections/great-construct-team.html" %}
+    {% include "web/sections/footer.html" %}
+    {% include "web/sections/bottom-bar.html" %}
 {% endblock %}

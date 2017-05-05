@@ -126,6 +126,9 @@ MEDIA_URL = '/md/'
 STATICFILES_DIRS = [
     # os.path.join(BASE_DIR, "core","statics"),
     os.path.join(BASE_DIR, "core", "statics", "dist"),
+    os.path.join(BASE_DIR, "web", "statics"),
+    os.path.join(BASE_DIR, "web", "statics", "web"),
+    os.path.join(BASE_DIR, "web", "statics", "web", "dev"),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static_files")
