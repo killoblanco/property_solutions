@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'frvdlz!@s+1eze7x3l&2y36h9pj&6y+&*+a(re5zk#&-91q858'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True if 'ENV' not in os.environ.keys() or os.environ['ENV'] == 'PBE' else False
 DEBUG = True if 'ENV' not in os.environ.keys() or os.environ['ENV'] == 'PBE' else False
 
 ALLOWED_HOSTS = ['*']
@@ -119,19 +120,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = '/src/'
+
 MEDIA_URL = '/md/'
 
 STATICFILES_DIRS = [
-    # os.path.join(BASE_DIR, "core","statics"),
     os.path.join(BASE_DIR, "core", "statics", "dist"),
     os.path.join(BASE_DIR, "web", "statics"),
-    os.path.join(BASE_DIR, "web", "statics", "web"),
-    os.path.join(BASE_DIR, "web", "statics", "web", "dev"),
 ]
-
-STATIC_ROOT = os.path.join(BASE_DIR, "static_files")
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
