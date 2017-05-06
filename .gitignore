@@ -227,3 +227,4 @@ ENV/
 
 /web/statics/web/img/src/*
 /static_files/
+/staticfiles/
