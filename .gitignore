@@ -225,5 +225,5 @@ ENV/
 
 # End of https://www.gitignore.io/api/node,python,pycharm
 
-staticfiles
 /web/statics/web/img/src/*
+/static_files/
