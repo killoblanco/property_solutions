@@ -902,7 +902,7 @@ header nav.mainmenu-container ul > li > ul > li > a:hover {
 **/
 
 #service-we-provide {
-    padding: 80px 0;
+    padding: 80px 0 0;
     background: #F9F9F9;
 }
 #service-we-provide .section-title h1 {
@@ -978,14 +978,13 @@ header nav.mainmenu-container ul > li > ul > li > a:hover {
     width: 100%;
 }
 .service-tab-content .col-lg-4 {
-    position: absolute;
-    right: 40px;
-    bottom: -84px;
-    padding: 0;
+    /*position: absolute;*/
+    /*right: 40px;*/
+    top: -84px;
+    /*padding: 0;*/
 }
 .service-tab-content .col-lg-4 img {
-    max-width: none;
-    width: 288px;
+    max-width: 100%;
 }
 /**
 * Our Project Styles.
