@@ -573,7 +573,7 @@
 	  width: 100%;
 	}
 	#service-we-provide.construct .service-tab-content .col-lg-4 {
-	  bottom: -80px;
+	  top: 0px;
 	}
 	#project-version-one.construct.home .gallery-filter {
 		margin-bottom: 10px;
@@ -1750,7 +1750,7 @@
 		display: block;
 	}
 	#service-we-provide.construct .service-tab-content .col-lg-4 {
-	  bottom: -80px;
+	  top: 0px;
 	}
 	#project-version-one .gallery-v4 .single-project-item {
 	    width: 50%;
