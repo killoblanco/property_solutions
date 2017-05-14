@@ -14,7 +14,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/static_files" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6.1 (C:\Users\Kamilo\Anaconda3\envs\ps\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6.1 (/anaconda/envs/ps/bin/python3.6)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">
