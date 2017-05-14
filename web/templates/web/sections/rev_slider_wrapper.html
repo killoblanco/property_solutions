@@ -1,9 +1,11 @@
+{% load static %}
+
 {# .rev_slider_wrapper #}
 <section class="rev_slider_wrapper construct-banner-wrapper">
     <div id="slider1" class="rev_slider" data-version="5.0">
         <ul>
             <li data-transition="fade">
-                <img src="img/slides/image1.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+                <img src="{% static "web/img/slides/img (1).jpg" %}" alt="" data-bgposition="center top" data-bgfit="cover"
                      data-bgrepeat="no-repeat">
 
                 <div class="tp-caption sfb tp-resizeme construct-banner-caption"
@@ -63,7 +65,7 @@
                 </div>
             </li>
             <li data-transition="fade">
-                <img src="img/slides/image2.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+                <img src="{% static "web/img/slides/img (2).jpg" %}" alt="" data-bgposition="center top" data-bgfit="cover"
                      data-bgrepeat="no-repeat">
 
                 <div class="tp-caption sfb tp-resizeme construct-banner-caption"
@@ -119,7 +121,7 @@
                 </div>
             </li>
             <li data-transition="fade">
-                <img src="img/slides/image3.jpg" alt="" data-bgposition="center top" data-bgfit="cover"
+                <img src="{% static "web/img/slides/img (3).jpg" %}" alt="" data-bgposition="center top" data-bgfit="cover"
                      data-bgrepeat="no-repeat">
 
                 <div class="tp-caption sfb tp-resizeme construct-banner-caption"
