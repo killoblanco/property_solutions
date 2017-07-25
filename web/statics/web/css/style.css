@@ -3874,7 +3874,7 @@ header.header-v1.header-fixed .top-info {
 
 #header-v1-banner {
     padding: 320px 0 0px;
-    background: url("../img/slides/img (1).jpg") no-repeat center center;
+    background: url("../img/slides/img-2.jpg") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
     height: 100vh;
@@ -4051,7 +4051,7 @@ header.header-v3 .mainmenu-container ul li.top-icons a:before {
 **/
 
 #banner.header-v3 {
-    background: url("../img/slides/img (2).jpg") center top no-repeat;
+    background: url("../img/slides/img-3.jpg") center top no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     padding: 135px 0 100px;
@@ -4261,7 +4261,7 @@ header.header-v4 .mainmenu-container ul li.top-icons a:before {
 
 #banner.header-v2 {
     padding: 285px 0 160px;
-    background: url("../img/slides/img (3).jpg") right top no-repeat;
+    background: url("../img/slides/img-1.jpg") right top no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
 }
@@ -5227,7 +5227,7 @@ header.construct .cart-box {
 
 
 #construct-banner {
-    background: url("../img/slides/img (1).jpg") center center no-repeat;
+    background: url("../img/slides/img-1.jpg") center center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
     /*height: 803px;*/
